@@ -15,7 +15,7 @@ plot1 <- function() {
         householdData_filtered[,c(3:8)] <- sapply(householdData_filtered[,c(3:8)], as.numeric)
         
         ##Plot the graph into plot1.png.
-        png("plot1.png", width = 480, height = 480, bg = "transparent")
+        png("plot1.png", width = 480, height = 480)
         hist(householdData_filtered$Global_active_power, col = "red", 
              xlab = "Global Active Power (kilowatts)", main = "Global Active Power", ylim = c(0,1200))
         dev.off()

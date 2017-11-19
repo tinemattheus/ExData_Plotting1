@@ -17,7 +17,7 @@ plot2 <- function() {
         householdData_filtered[,c(3:8)] <- sapply(householdData_filtered[,c(3:8)], as.numeric)
         
         ##Plot the graph into plot2.png.
-        png("plot2.png", width = 480, height = 480, bg = "transparent")
+        png("plot2.png", width = 480, height = 480)
         with(householdData_filtered,plot(strptime(timestamp,"%d/%m/%Y %H:%M:%S"), 
                                          Global_active_power, type = "l", xlab = "",
                                          ylab = "Global Active Power (kilowatts)"))

@@ -17,7 +17,7 @@ plot3 <- function() {
         householdData_filtered[,c(3:8)] <- sapply(householdData_filtered[,c(3:8)], as.numeric)
         
         ##Plot the graph into plot3.png.
-        png("plot3.png", width = 480, height = 480, bg = "transparent")
+        png("plot3.png", width = 480, height = 480)
         with(householdData_filtered, plot(strptime(timestamp,"%d/%m/%Y %H:%M:%S"), Sub_metering_1, type = "n",
                                           xlab = "", ylab = "Energy sub metering"))
         with(householdData_filtered, points(strptime(timestamp,"%d/%m/%Y %H:%M:%S"), Sub_metering_1, type = "l", col = "black"))

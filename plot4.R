@@ -17,7 +17,7 @@ plot4 <- function() {
         householdData_filtered[,c(3:8)] <- sapply(householdData_filtered[,c(3:8)], as.numeric)
         
         ##Plot 4 grahps, 2 by 2, into plot4.png.
-        png("plot4.png", width = 480, height = 480, bg = "transparent")
+        png("plot4.png", width = 480, height = 480)
         
         par(mfrow = c(2,2))
         
